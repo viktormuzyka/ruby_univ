@@ -1,4 +1,4 @@
-$eps = 0.00001
+$eps = 0.001
 
 def factorial n
   n > 1 ? n * factorial(n - 1) : 1
@@ -52,7 +52,7 @@ end
 
 printf("First series: #{first_series}\n")
 
-$x = 0.000175
+$x = 0.1
 printf("\nSecond series (sin #{$x}): #{second_series($x)}\nWhen Math.sin(#{$x}) returns #{Math.sin($x)}\n")
 
 printf("\nThird series: #{third_series}\n")
