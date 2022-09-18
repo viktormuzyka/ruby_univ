@@ -7,8 +7,6 @@ X = -8
 Y = -10
 Z = -12
 
-#Variant 8
-
 def first_task
   printf("a) !(A  B)  (A  !B): #{!(A || B) && (A && !B)}\n")
   printf("b) (Z != Y) ≤ (6 ≥ Y)  A  B  C  X ≥ 1.5: #{(Z != Y).object_id <= (6 >= Y).object_id && A || B && C && X >= 1.5}\n")
@@ -22,7 +20,7 @@ end
 first_task()
 
 P = true
-Q = true
+x = -0.5
 
 def second_task
   n = -2
