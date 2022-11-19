@@ -1,0 +1,18 @@
+<h1>Machines without standby</h1>
+<style>
+    body {
+        font-size: large;
+    }
+    h1{
+        font-size: xxx-large;
+    }
+</style>
+<ul>
+  <% @all_time_worked_machines.each do |machine| %>
+    <li>
+      <%= machine.name %>
+      <%= machine.standby %>
+      <%= machine.work_time %>
+    </li>
+  <% end %>
+</ul>
