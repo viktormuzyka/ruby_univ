@@ -37,8 +37,8 @@ class MachineController < ApplicationController
   end
 
   def destroy
-    @baggage = Machine.find(params[:id])
-    @baggage.destroy
+    @machine = Machine.find(params[:id])
+    @machine.destroy
 
     redirect_to root_path
   end
