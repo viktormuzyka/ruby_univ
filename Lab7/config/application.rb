@@ -14,8 +14,8 @@ module Blog
     config.load_defaults 7.0
 
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
-    I18n.available_locales = [:en, :ua, :pt, :de]
-    config.i18n.default_locale = :de
+    I18n.available_locales = [:en, :ua]
+    config.i18n.default_locale = :ua
 
     # Configuration for the application, engines, and railties goes here.
     #
